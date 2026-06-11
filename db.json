@@ -1,0 +1,501 @@
+{
+  "users": [
+    {
+      "id": "usr_1",
+      "name": "Arthur Pendragon",
+      "email": "user@stylesync.com",
+      "password": "password",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "owner_1",
+      "name": "Julian Blackstone",
+      "email": "owner@stylesync.com",
+      "password": "password",
+      "role": "owner",
+      "status": "active"
+    },
+    {
+      "id": "adm_1",
+      "name": "Admin Paramount",
+      "email": "admin@stylesync.com",
+      "password": "password",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": "usr_2",
+      "name": "Logan Harrison",
+      "email": "logan@stylesync.com",
+      "password": "password",
+      "role": "user",
+      "status": "suspended"
+    },
+    {
+      "id": "usr_1780235883401",
+      "name": "salon4",
+      "email": "salon4@gmail.com",
+      "password": "Salon4@123",
+      "role": "owner",
+      "status": "active"
+    },
+    {
+      "id": "usr_1780239864150",
+      "name": "salon5",
+      "email": "salon5@gmail.com",
+      "password": "Salon5@123",
+      "role": "owner",
+      "status": "active"
+    },
+    {
+      "id": "babd74b2-5ca0-4b79-846c-821026db6f0c",
+      "name": "Grooming Master",
+      "email": "grooming_master@gmail.com",
+      "password": "Password123!",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "1d6d2229-9b2b-494a-8bad-7db476ba758e",
+      "name": "Grooming Master",
+      "email": "grooming_master@gmail.com",
+      "password": "Password123!",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "c907d1ca-a2d4-42dc-ac39-95cd9322cdee",
+      "name": "Nikhil",
+      "email": "Nikhil@gmail.com",
+      "password": "Nikhil@123",
+      "role": "user",
+      "status": "active"
+    }
+  ],
+  "salons": [
+    {
+      "id": "salon_1",
+      "ownerId": "owner_1",
+      "name": "The Golden Razor Elite",
+      "description": "An authentic, premium grooming club combining traditional wet-shaving luxury with avant-garde modern styling. Indulge in complimentary single-malt scotch during your styling experience.",
+      "address": "742 Amber Boulevard, Manhattan, NY",
+      "phone": "+1 (555) 123-4567",
+      "rating": 4.9,
+      "logoUrl": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=200",
+      "bannerUrl": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1200",
+      "status": "approved"
+    },
+    {
+      "id": "salon_2",
+      "ownerId": "owner_1",
+      "name": "Blackwood Barber Club",
+      "description": "Rustic dark timber vibes, vintage leather parlor chairs, and masters of the straight razor. StyleSync's signature destination for tailored gentlemen's beard care and executive treatments.",
+      "address": "18 Executive Arch Lane, Brooklyn, NY",
+      "phone": "+1 (555) 987-6543",
+      "rating": 4.7,
+      "logoUrl": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=200",
+      "bannerUrl": "https://images.unsplash.com/photo-1605497746444-1296151a7db8?auto=format&fit=crop&q=80&w=1200",
+      "status": "approved"
+    },
+    {
+      "id": "salon_3",
+      "ownerId": "owner_new_id_placeholder",
+      "name": "Apex Vanguard Grooming",
+      "description": "Futuristic men's styling studio focused on precision clipper art, skin fades, and advanced scalp therapy.",
+      "address": "33 Highline Terrace, Queens, NY",
+      "phone": "+1 (555) 441-2090",
+      "rating": 4.5,
+      "logoUrl": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=200",
+      "bannerUrl": "https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?auto=format&fit=crop&q=80&w=1200",
+      "status": "approved"
+    },
+    {
+      "id": "salon_1780236970323",
+      "ownerId": "owner_1",
+      "name": "Gentlemens Den Retreat",
+      "description": "Premium luxury wet shave and customized shear haircuts.",
+      "address": "88 Broadway St, New York, NY",
+      "phone": "+1 (555) 777-8888",
+      "rating": 5,
+      "logoUrl": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=200",
+      "bannerUrl": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=1200",
+      "status": "approved"
+    },
+    {
+      "id": "salon_1780237655136",
+      "ownerId": "usr_1780235883401",
+      "name": "salon 4",
+      "description": "salon4",
+      "address": "haveri",
+      "phone": "1234567890",
+      "rating": 5,
+      "logoUrl": "https://images.unsplash.com/photo-1605497746444-1296151a7db8?auto=format&fit=crop&q=80&w=200",
+      "bannerUrl": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=1200",
+      "status": "suspended"
+    },
+    {
+      "id": "salon_1780239930703",
+      "ownerId": "usr_1780239864150",
+      "name": "saloon5",
+      "description": "Salon5",
+      "address": "HVR",
+      "phone": "1234509876",
+      "rating": 5,
+      "logoUrl": "https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?auto=format&fit=crop&q=80&w=200",
+      "bannerUrl": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=1200",
+      "status": "suspended"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv_1_1",
+      "salonId": "salon_1",
+      "name": "Royal Golden Cut",
+      "description": "Our signature shears style with deep clarifying shampoo wash, relaxing neck massage, and professional pomade finish.",
+      "price": 55,
+      "duration": 45,
+      "category": "Haircut"
+    },
+    {
+      "id": "srv_1_2",
+      "salonId": "salon_1",
+      "name": "Imperial Hot Towel Shave",
+      "description": "Traditional straight razor hot lather shave, accompanied by aromatherapy pre-shave oils and sandlewood cooling splash.",
+      "price": 45,
+      "duration": 35,
+      "category": "Shave"
+    },
+    {
+      "id": "srv_1_3",
+      "salonId": "salon_1",
+      "name": "Golden Beard Sculpting & Razor Trim",
+      "description": "Detailed beard reshaping, fade integration, line-up with fresh steel razor, and organic wood-infused beard oils.",
+      "price": 35,
+      "duration": 30,
+      "category": "Beard"
+    },
+    {
+      "id": "srv_1_4",
+      "salonId": "salon_1",
+      "name": "Oxygen Refreshing Facial Service",
+      "description": "Fine pore-cleansing clay mask, steam therapy, and cold-stone hydration finish to reverse urban air fatigue.",
+      "price": 40,
+      "duration": 25,
+      "category": "Facial"
+    },
+    {
+      "id": "srv_1_5",
+      "salonId": "salon_1",
+      "name": "The Golden Crown King Package",
+      "description": "The ultimate styling package: Royal Golden Cut + Imperial Hot Towel Shave + Beard Trim and mud face treatment.",
+      "price": 110,
+      "duration": 90,
+      "category": "Combo"
+    },
+    {
+      "id": "srv_2_1",
+      "salonId": "salon_2",
+      "name": "Executive Taper & Cut",
+      "description": "Contemporary styling with standard razor back-line, complete with fine herbal styling tonic.",
+      "price": 45,
+      "duration": 40,
+      "category": "Haircut"
+    },
+    {
+      "id": "srv_2_2",
+      "salonId": "salon_2",
+      "name": "Blackwood Signature Shave",
+      "description": "Double lather shave with premium badger-hair brush, warm steam towels, and restorative cold clay mask.",
+      "price": 38,
+      "duration": 30,
+      "category": "Shave"
+    },
+    {
+      "id": "srv_2_3",
+      "salonId": "salon_2",
+      "name": "Sleek Beard Trim & Hydrate",
+      "description": "Clipper trim, mustache sculpting, and beard-butter combing for softness and structural hold.",
+      "price": 28,
+      "duration": 20,
+      "category": "Beard"
+    },
+    {
+      "id": "srv_1780237142454",
+      "salonId": "salon_1780236970323",
+      "name": "Elite Cut",
+      "description": "",
+      "price": 60,
+      "duration": 45,
+      "category": "Haircut"
+    }
+  ],
+  "staff": [
+    {
+      "id": "stf_1_1",
+      "salonId": "salon_1",
+      "name": "Viktor Vance",
+      "role": "Master Barber",
+      "rating": 4.9,
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "skills": [
+        "srv_1_1",
+        "srv_1_3",
+        "srv_1_5"
+      ]
+    },
+    {
+      "id": "stf_1_2",
+      "salonId": "salon_1",
+      "name": "Marcus Sterling",
+      "role": "Wet Shave Specialist",
+      "rating": 4.8,
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "skills": [
+        "srv_1_2",
+        "srv_1_3",
+        "srv_1_4"
+      ]
+    },
+    {
+      "id": "stf_1_3",
+      "salonId": "salon_1",
+      "name": "Julian Stone",
+      "role": "Top Tier Stylist",
+      "rating": 4.7,
+      "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=150",
+      "skills": [
+        "srv_1_1",
+        "srv_1_4",
+        "srv_1_5"
+      ]
+    },
+    {
+      "id": "stf_2_1",
+      "salonId": "salon_2",
+      "name": "Silas Vance",
+      "role": "Lead Barber",
+      "rating": 4.9,
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+      "skills": [
+        "srv_2_1",
+        "srv_2_3"
+      ]
+    },
+    {
+      "id": "stf_2_2",
+      "salonId": "salon_2",
+      "name": "Daniel Blackwood",
+      "role": "Shaving Connoisseur",
+      "rating": 4.6,
+      "avatarUrl": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?auto=format&fit=crop&q=80&w=150",
+      "skills": [
+        "srv_2_2",
+        "srv_2_3"
+      ]
+    },
+    {
+      "id": "stf_1780237211814",
+      "salonId": "salon_1780236970323",
+      "name": "Julian Sterling",
+      "role": "Master Barber",
+      "rating": 4.8,
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "skills": []
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk_1",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_1",
+      "serviceName": "Royal Golden Cut",
+      "servicePrice": 55,
+      "staffId": "stf_1_1",
+      "staffName": "Viktor Vance",
+      "date": "2026-05-21",
+      "time": "10:30",
+      "status": "completed",
+      "notes": "Keeps his fade extremely short, style neatly.",
+      "createdAt": "2026-05-17T00:00:00.000Z"
+    },
+    {
+      "id": "bk_2",
+      "userId": "usr_2",
+      "userName": "Logan Harrison",
+      "userEmail": "logan@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_5",
+      "serviceName": "The Golden Crown King Package",
+      "servicePrice": 110,
+      "staffId": "stf_1_3",
+      "staffName": "Julian Stone",
+      "date": "2026-05-23",
+      "time": "14:00",
+      "status": "completed",
+      "notes": "Wants premium scotch whiskey served cold.",
+      "createdAt": "2026-05-22T00:00:00.000Z"
+    },
+    {
+      "id": "bk_3",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_2",
+      "serviceName": "Imperial Hot Towel Shave",
+      "servicePrice": 45,
+      "staffId": "stf_1_2",
+      "staffName": "Marcus Sterling",
+      "date": "2026-05-24",
+      "time": "11:00",
+      "status": "completed",
+      "createdAt": "2026-05-24T00:00:00.000Z"
+    },
+    {
+      "id": "bk_4",
+      "userId": "usr_2",
+      "userName": "Logan Harrison",
+      "userEmail": "logan@stylesync.com",
+      "salonId": "salon_2",
+      "salonName": "Blackwood Barber Club",
+      "serviceId": "srv_2_1",
+      "serviceName": "Executive Taper & Cut",
+      "servicePrice": 45,
+      "staffId": "stf_2_1",
+      "staffName": "Silas Vance",
+      "date": "2026-05-25",
+      "time": "09:00",
+      "status": "completed",
+      "createdAt": "2026-05-23T00:00:00.000Z"
+    },
+    {
+      "id": "bk_5",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_2",
+      "salonName": "Blackwood Barber Club",
+      "serviceId": "srv_2_3",
+      "serviceName": "Sleek Beard Trim & Hydrate",
+      "servicePrice": 28,
+      "staffId": "stf_2_2",
+      "staffName": "Daniel Blackwood",
+      "date": "2026-05-26",
+      "time": "17:30",
+      "status": "completed",
+      "createdAt": "2026-05-25T00:00:00.000Z"
+    },
+    {
+      "id": "bk_6",
+      "userId": "usr_2",
+      "userName": "Logan Harrison",
+      "userEmail": "logan@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_3",
+      "serviceName": "Golden Beard Sculpting & Razor Trim",
+      "servicePrice": 35,
+      "staffId": "stf_1_1",
+      "staffName": "Viktor Vance",
+      "date": "2026-05-22",
+      "time": "15:15",
+      "status": "completed",
+      "createdAt": "2026-05-22T00:00:00.000Z"
+    },
+    {
+      "id": "bk_7",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_4",
+      "serviceName": "Oxygen Refreshing Facial Service",
+      "servicePrice": 40,
+      "staffId": "stf_1_2",
+      "staffName": "Marcus Sterling",
+      "date": "2026-05-25",
+      "time": "12:00",
+      "status": "cancelled",
+      "createdAt": "2026-05-25T00:00:00.000Z"
+    },
+    {
+      "id": "bk_8",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_1",
+      "serviceName": "Royal Golden Cut",
+      "servicePrice": 55,
+      "staffId": "stf_1_1",
+      "staffName": "Viktor Vance",
+      "date": "2026-05-28",
+      "time": "10:00",
+      "status": "cancelled",
+      "notes": "Gearing up for a high-profile business meeting.",
+      "createdAt": "2026-05-27T10:29:19.197Z"
+    },
+    {
+      "id": "bk_9",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_1",
+      "salonName": "The Golden Razor Elite",
+      "serviceId": "srv_1_3",
+      "serviceName": "Golden Beard Sculpting & Razor Trim",
+      "servicePrice": 35,
+      "staffId": "stf_1_2",
+      "staffName": "Marcus Sterling",
+      "date": "2026-05-29",
+      "time": "15:00",
+      "status": "cancelled",
+      "notes": "Keep line clean, fade nicely into sidewalls.",
+      "createdAt": "2026-05-27T10:29:19.197Z"
+    },
+    {
+      "id": "bk_10",
+      "userId": "usr_2",
+      "userName": "Logan Harrison",
+      "userEmail": "logan@stylesync.com",
+      "salonId": "salon_2",
+      "salonName": "Blackwood Barber Club",
+      "serviceId": "srv_2_1",
+      "serviceName": "Executive Taper & Cut",
+      "servicePrice": 45,
+      "staffId": "stf_2_1",
+      "staffName": "Silas Vance",
+      "date": "2026-05-30",
+      "time": "11:30",
+      "status": "pending",
+      "createdAt": "2026-05-27T10:29:19.197Z"
+    },
+    {
+      "id": "bk_1780237352456",
+      "userId": "usr_1",
+      "userName": "Arthur Pendragon",
+      "userEmail": "user@stylesync.com",
+      "salonId": "salon_1780236970323",
+      "salonName": "Gentlemens Den Retreat",
+      "serviceId": "srv_1780237142454",
+      "serviceName": "Elite Cut",
+      "servicePrice": 60,
+      "staffId": "stf_1780237211814",
+      "staffName": "Julian Sterling",
+      "date": "2026-06-02",
+      "time": "09:00",
+      "status": "cancelled",
+      "notes": "",
+      "createdAt": "2026-05-31T14:22:32.456Z"
+    }
+  ]
+}
