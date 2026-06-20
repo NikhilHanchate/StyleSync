@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getStorageItem, setStorageItem, seedInitialData } from "../utils/storage";
-import { supabase } from "../utils/supabaseClient";
+import { supabase, isConfigured } from "../utils/supabaseClient";
 import { api } from "../utils/api";
 import { User, UserRole } from "../types";
 import { Scissors, Lock, Mail, User as UserIcon, Sparkles, AlertCircle, ArrowRight, UserPlus, Info, Eye, EyeOff } from "lucide-react";
@@ -67,6 +67,28 @@ export default function Auth() {
     }
 
     try {
+      if (!isConfigured) {
+        // Local authentication bypass
+        const allUsers = getStorageItem<User[]>("users", []);
+        const matchingUser = allUsers.find(
+          (u) => u.email.toLowerCase() === email.toLowerCase() && u.password === password
+        );
+        if (!matchingUser) {
+          setError("Invalid credentials for local demo user.");
+          return;
+        }
+        if (matchingUser.status === "suspended") {
+          setError("This account has been suspended by the platform administrator.");
+          return;
+        }
+        setStorageItem("currentUser", matchingUser);
+        setSuccess(`[Demo Mode] Welcome back, ${matchingUser.name}!`);
+        setTimeout(() => {
+          handleRedirection(matchingUser.role);
+        }, 850);
+        return;
+      }
+
       // Authenticate securely with Supabase
       const { data, error: authError } = await supabase.auth.signInWithPassword({
         email,
@@ -135,6 +157,31 @@ export default function Auth() {
     }
 
     try {
+      if (!isConfigured) {
+        // Local registration bypass
+        const allUsers = getStorageItem<User[]>("users", []);
+        if (allUsers.some((u) => u.email.toLowerCase() === email.toLowerCase())) {
+          setError("An account with this email already exists locally.");
+          return;
+        }
+        const newUser: User = {
+          id: `usr_${Date.now()}`,
+          name,
+          email,
+          password,
+          role,
+          status: "active",
+        };
+        allUsers.push(newUser);
+        setStorageItem("users", allUsers);
+        setStorageItem("currentUser", newUser);
+        setSuccess("[Demo Mode] Account successfully forged!");
+        setTimeout(() => {
+          handleRedirection(newUser.role);
+        }, 850);
+        return;
+      }
+
       // Sign up the user in Supabase
       const { data, error: authError } = await supabase.auth.signUp({
         email,
@@ -190,6 +237,21 @@ export default function Auth() {
     
     setTimeout(async () => {
       try {
+        if (!isConfigured) {
+          const allUsers = getStorageItem<User[]>("users", []);
+          const matchingUser = allUsers.find(u => u.email.toLowerCase() === demoEmail.toLowerCase());
+          if (matchingUser) {
+            setStorageItem("currentUser", matchingUser);
+            setSuccess(`[Demo Mode] Logging in as ${matchingUser.name}...`);
+            setTimeout(() => {
+              handleRedirection(matchingUser.role);
+            }, 700);
+          } else {
+            setError("Demo user not found in local storage.");
+          }
+          return;
+        }
+
         // Attempt to log in with Supabase Auth
         let { data, error: authError } = await supabase.auth.signInWithPassword({
           email: demoEmail,
